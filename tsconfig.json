@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",
+    "lib": ["ES2020"],
+
+    /* Modules and Resolution */
+    "module": "NodeNext",                 // Support for ES modules with node
+    "moduleResolution": "NodeNext",      // Resolve ESM/CommonJS node-style
+    "rootDir": "./src",                  // Source folder
+    "outDir": "./dist",                  // Output compiled JS
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* Emit Behavior */
+    "noEmitOnError": true,
+    "sourceMap": true,                   // Optional: for debugging TS code
+
+    /* Interop & Clean Code */
+    "forceConsistentCasingInFileNames": true,
+
+    /* Strict Type Checking */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
