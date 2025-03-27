@@ -38,15 +38,15 @@ class Vehicle implements Driveable {
 
   start(): void {
     this.started = true;
-    console.log('🚗 Vehicle started');
+    console.log('Vehicle started');
   }
 
   accelerate(change: number): void {
     if (this.started) {
       this.currentSpeed += change;
-      console.log(`🚀 Accelerated to ${this.currentSpeed} mph`);
+      console.log(`Accelerated to ${this.currentSpeed} mph`);
     } else {
-      console.log('⚠️ Start the vehicle first');
+      console.log('Start the vehicle first');
     }
   }
 
@@ -54,31 +54,31 @@ class Vehicle implements Driveable {
     if (this.started) {
       this.currentSpeed -= change;
       if (this.currentSpeed < 0) this.currentSpeed = 0;
-      console.log(`🛑 Decelerated to ${this.currentSpeed} mph`);
+      console.log(`Decelerated to ${this.currentSpeed} mph`);
     } else {
-      console.log('⚠️ Start the vehicle first');
+      console.log('Start the vehicle first');
     }
   }
 
   stop(): void {
     this.currentSpeed = 0;
     this.started = false;
-    console.log('🅿️ Vehicle stopped');
+    console.log('Vehicle stopped');
   }
 
   turn(direction: string): void {
     if (this.started) {
-      console.log(`↪️ Vehicle turned ${direction}`);
+      console.log(`Vehicle turned ${direction}`);
     } else {
-      console.log('⚠️ Start the vehicle first');
+      console.log('Start the vehicle first');
     }
   }
 
   reverse(): void {
     if (this.started) {
-      console.log('🔁 Vehicle reversed');
+      console.log('Vehicle reversed');
     } else {
-      console.log('⚠️ Start the vehicle first');
+      console.log('Start the vehicle first');
     }
   }
 }
